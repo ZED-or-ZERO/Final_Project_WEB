@@ -1,0 +1,428 @@
+/* --------------- Home --------------- */
+.home {
+    padding: 30px;
+}
+
+/* ---------- carousel inner ---------- */
+.bg-body .carousel-item-body {
+    display: flex;
+    justify-content: center;
+}
+
+.bg-body .carousel-item-body-center {
+    position: relative;
+    width: 458px;
+    height: 440px;
+}
+
+.bg-body h5 {
+    text-transform: uppercase;
+    font-size: 13rem;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px #fff;
+}
+
+.bg-body igm {
+    position: absolute;
+}
+
+.bg-body .carousel-caption.img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.before-text,
+.after-text {
+    font-family: sans-serif;
+    font-weight: 900;
+    ;
+}
+
+.before,
+.after {
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13rem;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px #fff;
+}
+
+.after {
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.before {
+    z-index: -1;
+}
+
+/* ---------- Indicator ---------- */
+
+.home .carousel-indicators {
+    flex-direction: column;
+    left: -200px;
+    top: 0;
+    right: auto;
+}
+
+.carousel-indicators [data-bs-target] {
+    position: relative;
+    border-radius: 50%;
+    width: 11px;
+    height: 11px;
+    margin: 5px auto;
+    background: transparent;
+    border: 2px solid;
+}
+
+.carousel-indicators button:hover {
+    scale: 1.1;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(255, 255, 255, .7), 0 0 20px rgba(255, 255, 255, .9), 0 0 30px rgba(255, 255, 255, 1);
+
+}
+
+.carousel-indicators .active {
+    background: #ffffff7c;
+    box-shadow: 0 0 20px rgba(255, 255, 255, .7);
+}
+
+/* ---------- REWARDS ---------- */
+.rewards {
+    padding: 60px;
+    z-index: 1;
+}
+
+.rows {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rewards .colum {
+    flex: 1 0 0%;
+    height: 70px;
+    min-width: 230px;
+}
+
+.rewards .colum:first-child {
+    border-right: 1px solid #00dbff;
+}
+
+.rewards .colum:last-child {
+    border-left: 1px solid #00dbff;
+}
+
+/* ---------- OUR TEAM ---------- */
+.teams {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 90px 0 120px 0;
+    z-index: 1;
+}
+
+.team-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+    padding: 0px 60px 0px 0px;
+}
+
+.team-content__text h1 {
+    font-weight: 900;
+}
+
+.team-content__text p {
+    margin: 12px 0;
+    padding: 0 12px;
+    border-left: 4px solid #00dbff80;
+    max-width: 530px;
+}
+
+.team-content__img {
+    width: 290px;
+    padding: 12px 0 0 12px;
+    border-radius: 10px;
+}
+
+.team-image {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 50%;
+    padding: 0px 0px 0px 60px;
+}
+
+.team-image__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 280px;
+    width: 280px;
+}
+
+/* rocks */
+.team-image-rock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.rocks {
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.teams .rock-1 {
+    right: 4rem;
+    bottom: 8rem;
+}
+
+.teams .rock-2 {
+    bottom: 7rem;
+    left: 5rem;
+}
+
+.teams .rock-3 {
+    left: 8rem;
+    top: 1rem;
+}
+
+.teams .rock-4 {
+    left: 13rem;
+    bottom: 1rem;
+}
+
+.teams .rock-5 {
+    right: 5rem;
+    top: 1rem;
+}
+
+.teams .rock-6 {
+    right: 16rem;
+    bottom: 0rem;
+}
+
+.rock-1 {
+    width: 79px;
+    height: 48px;
+    background-image: url(../images/rock/rock-1.png);
+}
+
+.rock-2 {
+    width: 77px;
+    height: 80px;
+    background-image: url(../images/rock/rock-2.png);
+}
+
+.rock-3 {
+    width: 90px;
+    height: 81px;
+    background-image: url(../images/rock/rock-3.png);
+}
+
+.rock-4 {
+    width: 42px;
+    height: 40px;
+    background-image: url(../images/rock/rock-4.png);
+}
+
+.rock-5 {
+    width: 43px;
+    height: 42px;
+    background-image: url(../images/rock/rock-5.png);
+}
+
+.rock-6 {
+    width: 37px;
+    height: 72px;
+    background-image: url(../images/rock/rock-6.png);
+}
+
+/* ---------- PROJECT VEIW ---------- */
+.projects {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    padding: 170px 0px 80px 0px;
+}
+
+.project-content h1 {
+    font-weight: 900;
+}
+
+.project-content span {
+    font-size: 3rem;
+    color: #00dbff;
+}
+
+.project-content p {
+    margin: 30px auto;
+}
+
+.button {
+    width: 110px;
+    height: 40px;
+    align-items: center;
+    border: 1px solid #fff;
+}
+
+.button:hover {
+    scale: 1.05;
+}
+
+.button a {
+    color: #fff;
+    font-size: 18px;
+    margin: 20px 7px;
+    text-decoration: none;
+}
+
+/* ---------- carousel ---------- */
+
+.projects .carousel-indicators {
+    flex-direction: column;
+    top: 0;
+    right: -8em;
+    left: auto;
+}
+
+.projects img {
+    max-width: 190px;
+    margin: 10px;
+}
+
+.col-md-auto {
+    max-width: 200px;
+}
+
+.prj-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: 500px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.project-body {
+    justify-content: center;
+    align-items: center;
+}
+
+.col-md-auto {
+    justify-items: end;
+    align-items: center;
+}
+
+/* ---------- REVIES ---------- */
+
+.reviews {
+    height: 100%;
+    display: flex;
+    padding: 40px 0;
+    z-index: 1;
+}
+
+.reviews .carousel-inner {
+    padding: 1em;
+}
+
+.col-md-4 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.reviews .card {
+    position: relative;
+    max-width: 540px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.reviews .card p,
+.reviews .card h5 {
+    color: #525252;
+}
+
+/* ---------- ROCKS ---------- */
+
+.reviews .rock-1 {
+    right: -42rem;
+    bottom: 8rem;
+    z-index: 3;
+}
+
+.reviews .rock-2 {
+    bottom: 7rem;
+    left: -51rem;
+}
+
+.reviews .rock-3 {
+    left: 8rem;
+    top: 1rem;
+    z-index: 3;
+}
+
+.reviews .rock-4 {
+    left: 13rem;
+    bottom: 1rem;
+}
+
+.reviews .rock-5 {
+    right: 5rem;
+    top: 1rem;
+    z-index: 3;
+}
+
+.reviews .rock-6 {
+    right: 16rem;
+    bottom: 0rem;
+    z-index: 3;
+}
+
+.prj-rock {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rock-body {
+    position: relative;
+    top: 13%;
+    left: 0;
+    max-width: 1420px;
+    height: 100%;
+}
+

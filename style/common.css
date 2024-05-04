@@ -1,0 +1,246 @@
+* {
+    font-family: 'Play', 'Jost', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+body {
+    height: 100%;
+}
+
+section {
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+/* -------- Custom scrollbar -------- */
+::-webkit-scrollbar {
+    width: 8px;
+    background: #000;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(2, 0, 36, 1) 40%, rgb(0, 219, 255) 40%, rgb(0, 219, 255) 60%, rgba(2, 0, 36, 1) 60%, rgba(2, 0, 36, 1) 100%);
+    border-radius: 30px;
+    margin: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 219, 255);
+    border-radius: 30px;
+}
+
+/* ---------- cuntom Wrapper  ---------- */
+.wrapper {
+    position: relative;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.wrapper a {
+    text-decoration: none;
+}
+
+/* ---------- SING OUT & LOG IN ---------- */
+.section-register {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: transparent;
+}
+
+.reg-block {
+    display: none;
+}
+
+.reg-block.open__reg {
+    display: block;
+}
+
+.register__body {
+    position: relative;
+    min-width: 400px;
+    background: transparent;
+    border: 2px solid #00ddff51;
+    border-radius: 20px;
+    backdrop-filter: blur(55px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+    z-index: 10;
+}
+
+.section-register h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    min-width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+.inputbox label {
+    position: absolute;
+    top: -28%;
+    left: 0;
+    color: #fff;
+    font-size: 1rem;
+    pointer-events: none;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.forget {
+    margin: 35px 0;
+    font-size: 0.85rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forget label {
+    display: flex;
+    align-items: center;
+}
+
+.forget label input {
+    margin-right: 3px;
+}
+
+.forget a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.reginster__button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    color: #000;
+    background-color: rgba(255, 255, 255, 1);
+    bottom: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: registerButton .4s ease;
+}
+
+.reginster__button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.register {
+    font-size: 0.9rem;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+/* ---------- Stars Background animation  ---------- */
+.sec {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #121212;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    background: #717171;
+    border-radius: 100%;
+}
+
+.animate {
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 5px #fff,
+        0 0 20px #fff,
+        0 0 50px #fff;
+    transition: 1s ease-out;
+}
+#profile {
+    display: none;
+    border-bottom: 2px solid cyan;
+    cursor: pointer;
+
+}
+#profile p {
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 0rem;
+}
+
+
+/* Стили для выпадающего меню */
+.dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  #profile:hover .dropdown-content {
+    display: block;
+  }
+  

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Community</title>
+  <!-- Bootsrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- CSS для Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="./style/common.css">
+  <link rel="stylesheet" href="./style/header__footer.css">
+  <link rel="stylesheet" href="./style/home.css">
+  <link rel="stylesheet" href="./style/adaptive.css">
+  <link rel="stylesheet" href="./style/animation.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <nav class="menu">
+          <div class="logo"><a href="#">Space Commutity</a></div>
+          <ul class="menu__item">
+            <li><a class="menu-link active" href="#">Home</a></li>
+            <li><a class="menu-link" href="./pages/gallery.html">gallery</a></li>
+            <li><a class="menu-link" href="./pages/about.html">about</a></li>
+            <li><a class="menu-link" href="#">contact</a></li>
+          </ul>
+          <div id="profile">
+            <p href="#" id="user">Username</p>
+            <div class="dropdown-content">
+              <a href="#" id="logoutBtn">Logout</a>
+            </div>
+          </div>
+          <a class="action__btn" id="loginForm">Login</a>
+          <div class="toggle__btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="section-register" id="section__sign">
+      <div class="reg-block">
+        <div class="register__body">
+          <form id="loginForm" action="#">
+            <h1>Log in!</h1>
+            <div class="inputbox">
+              <input type="text" id="username" name="username" required>
+              <label for="">Username</label>
+            </div>
+            <div class="inputbox">
+              <input type="password" id="password" name="password" required>
+              <label for="">Password</label>
+            </div>
+            <div class="forget">
+              <label for="">
+                <input type="checkbox">Remember Me
+              </label>
+              <a href="#">Forger Password</a>
+            </div>
+            <button onclick="login()" class="reginster__button">Login</button>
+            <div class="register">
+              <p>Don't have an Account
+                <a href="./pages/sign_up.html">Register</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </section>
+    <section class="home">
+      <div class="container">
+        <div id="Mycarousel" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#Mycarousel" data-bs-slide-to="0" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#Mycarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#Mycarousel" data-bs-slide-to="2" class="active" aria-current="true"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#Mycarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#Mycarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#Mycarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#Mycarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#Mycarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          </div>
+          <!-- carousel inner  -->
+          <div class="carousel-inner bg-body">
+            <!-- MERCURY -->
+            <div class="carousel-item">
+              <div class="carousel-item-body">
+                <div class="carousel-item-body-center item-long">
+                  <div class="carousel-caption img">
+                    <div class="before">
+                      <h5 class="before-text item-text-long">MERCURY</h5>
+                    </div>
+                    <img src="./images/planets/mercury.png" class="d-block w-100" alt="MERCURY">
+                    <div class="after">
+                      <h5 class="after-text item-text-long">MERCURY</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <p>This is a place for all space lovers where everyone will find a hundred things for themselves
+                </p>
+              </div>
+            </div>
+            <!-- VENUS -->
+            <div class="carousel-item">
+              <div class="carousel-item-body">
+                <div class="carousel-item-body-center">
+                  <div class="carousel-caption img">
+                    <div class="before">
+                      <h5 class="before-text">VENUS</h5>
+                    </div>
+                    <img src="./images/planets/venus.png" class="d-block w-100" alt="VENUS">
+                    <div class="after">
+                      <h5 class="after-text">VENUS</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <p>This is a place for all space lovers where everyone will find a hundred things for themselves
+                </p>
+              </div>
+            </div>
+            <!-- EARTH -->
+            <div class="carousel-item active">
+              <div class="carousel-item-body">
+                <div class="carousel-item-body-center">
+                  <div class="carousel-caption img">
+                    <div class="before">
+                      <h5 class="before-text">earth</h5>
+                    </div>
+                    <img src="./images/planets/earth.png" class="d-block w-100" alt="earth">
+                    <div class="after">
+                      <h5 class="after-text">earth</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <p>This is a place for all space lovers where everyone will find a hundred things for themselves
+                </p>
+              </div>
+            </div>
+            <!-- MARS -->
+            <div class="carousel-item">
+              <div class="carousel-item-body">
+                <div class="carousel-item-body-center">
+                  <div class="carousel-caption img">
+                    <div class="before">
+                      <h5 class="before-text">mars</h5>
+                    </div>
+                    <img src="./images/planets/mars.png" class="d-block w-100" alt="mars">
+                    <div class="after">
+                      <h5 class="after-text">mars</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <p>This is a place for all space lovers where everyone will find a hundred things for themselves
+                </p>
+              </div>
+            </div>
+            <!-- JUPITER -->
+            <div class="carousel-item">
+              <div class="carousel-item-body">
+                <div class="carousel-item-body-center item-long">
+                  <div class="carousel-caption img">
+                    <div class="before">
+                      <h5 class="before-text item-text-long">JUPITER</h5>
+                    </div>
+                    <img src="./images/planets/jupiter.png" class="d-block w-100" alt="JUPITER">
+                    <div class="after">
+                      <h5 class="after-text item-text-long">JUPITER</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <p>This is a place for all space lovers where everyone will find a hundred things for themselves
+                </p>
+              </div>
+            </div>
+            <!-- SATURN -->
+            <div class="carousel-item">
+              <div class="carousel-item-body">
+                <div class="carousel-item-body-center item-long">
+                  <div class="carousel-caption img">
+                    <div class="before">
+                      <h5 class="before-text item-text-long">SATURN</h5>
+                    </div>
+                    <img src="./images/planets/saturn.png" class="d-block w-100" alt="SATURN">
+                    <div class="after">
+                      <h5 class="after-text item-text-long">SATURN</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <p>This is a place for all space lovers where everyone will find a hundred things for themselves
+                </p>
+              </div>
+            </div>
+            <!-- URANUS -->
+            <div class="carousel-item">
+              <div class="carousel-item-body">
+                <div class="carousel-item-body-center item-long">
+                  <div class="carousel-caption img">
+                    <div class="before">
+                      <h5 class="before-text item-text-long">URANUS</h5>
+                    </div>
+                    <img src="./images/planets/uranus.png" class="d-block w-100" alt="URANUS">
+                    <div class="after">
+                      <h5 class="after-text item-text-long">URANUS</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <p>This is a place for all space lovers where everyone will find a hundred things for themselves
+                </p>
+              </div>
+            </div>
+            <!-- NEPTUNE -->
+            <div class="carousel-item">
+              <div class="carousel-item-body">
+                <div class="carousel-item-body-center item-long">
+                  <div class="carousel-caption img">
+                    <div class="before">
+                      <h5 class="before-text item-text-long">NEPTUNE</h5>
+                    </div>
+                    <img src="./images/planets/neptun.png" class="d-block w-100" alt="NEPTUNE">
+                    <div class="after">
+                      <h5 class="after-text item-text-long">NEPTUNE</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <p>This is a place for all space lovers where everyone will find a hundred things for themselves
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Control prev -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#Mycarousel" data-bs-slide="prev">
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#Mycarousel" data-bs-slide="next">
+        </button>
+      </div>
+    </section>
+    <section class="rewards">
+      <div class="container">
+        <div class="container text-center">
+          <div class="rows">
+            <div class="colum">
+              <h3>80</h3>
+              <p>Satisfied cliends</p>
+            </div>
+            <div class="colum">
+              <h3>200</h3>
+              <p>Posts completed</p>
+            </div>
+            <div class="colum">
+              <h3>99</h3>
+              <p>Reviews given</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="teams">
+      <div class="container">
+        <div class="team-body">
+          <!-- tema content -->
+          <div class="team-content">
+            <div class="team-content__text">
+              <h1>Our Team</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis molestias saepe voluptatem soluta
+                laborum natus! Aut, velit voluptatem optio laudantium mollitia alias, corporis exercitationem, tempora
+                sit quibusdam neque autem officiis!</p>
+            </div>
+            <div class="team-content__img">
+              <img src="./images/projects/image-5.png" alt="teams">
+            </div>
+          </div>
+          <!-- team image -->
+          <div class="team-image">
+            <div class="team-image__img">
+              <img src="./images/planets/earth.png" alt="">
+            </div>
+            <div class="team-image-rock">
+              <div class="rocks rock-1"></div>
+              <div class="rocks rock-2"></div>
+              <div class="rocks rock-3"></div>
+              <div class="rocks rock-4"></div>
+              <div class="rocks rock-5"></div>
+              <div class="rocks rock-6"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="projects">
+      <div class="container">
+        <div class="project-body row">
+          <!-- project content -->
+          <div class="project-content col-sm-4">
+            <h1>My Creative Works Latest <span>Projects</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam incidunt, aliquam nulla quod porro optio
+              minus, fugit dolor a accusamus voluptates praesentium tenetur vel, provident quia temporibus adipisci
+              animi? Officiis.</p>
+            <div class="button">
+              <a href="#">Show More </a>
+            </div>
+          </div>
+          <!-- project images carousel -->
+          <div class="project-image col-sm-7">
+            <!-- Carousel -->
+            <div id="ProjectIndecator" class="carousel slide">
+              <div class="carousel-inner">
+                <!--* 1 item -->
+                <div class="carousel-item active">
+                  <div class="container text-center">
+                    <div class="prj-row">
+                      <div class="col-md-auto"><img class="d-block w-100" src="./images/projects/image-1.png"
+                          alt="Project Image"></div>
+                      <div class="col-md-auto"><img class="d-block w-100"
+                          src="./images/gallery/photo_11_2023-12-20_14-18-15.jpg" alt="Project Image"></div>
+                      <div class="col-md-auto"><img class="d-block w-100" src="./images/projects/image-3.png"
+                          alt="Project Image"></div>
+                      <div class="col-md-auto"><img class="d-block w-100" src="./images/projects/image-4.png"
+                          alt="Project Image"></div>
+                    </div>
+                  </div>
+                </div>
+                <!--* 2 item -->
+                <div class="carousel-item">
+                  <div class="container text-center">
+                    <div class="prj-row">
+                      <div class="col-md-auto"><img class="d-block w-100" src="./images/projects/image-3.png"
+                          alt="Project Image"></div>
+                      <div class="col-md-auto"><img class="d-block w-100"
+                          src="./images/gallery/photo_11_2023-12-20_14-18-15.jpg" alt="Project Image"></div>
+                      <div class="col-md-auto"><img class="d-block w-100" src="./images/projects/image-1.png"
+                          alt="Project Image"></div>
+                      <div class="col-md-auto"><img class="d-block w-100" src="./images/projects/image-4.png"
+                          alt="Project Image"></div>
+                    </div>
+                  </div>
+                </div>
+                <!--* 3 item -->
+                <div class="carousel-item">
+                  <div class="container text-center">
+                    <div class="prj-row">
+                      <div class="col-md-auto"><img class="d-block w-100" src="./images/projects/image-4.png"
+                          alt="Project Image"></div>
+                      <div class="col-md-auto"><img class="d-block w-100"
+                          src="./images/gallery/photo_11_2023-12-20_14-18-15.jpg" alt="Project Image"></div>
+                      <div class="col-md-auto"><img class="d-block w-100" src="./images/projects/image-1.png"
+                          alt="Project Image"></div>
+                      <div class="col-md-auto"><img class="d-block w-100" src="./images/projects/image-3.png"
+                          alt="Project Image"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#ProjectIndecator" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#ProjectIndecator" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#ProjectIndecator" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <!-- CANTROL PREV -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#ProjectIndecator"
+                data-bs-slide="prev">
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#ProjectIndecator"
+                data-bs-slide="next">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <!-- ROCKS -->
+        <div class="prj-rock team-image-rock">
+          <div class="rock-body">
+            <div class="rocks rock-1"></div>
+            <div class="rocks rock-2"></div>
+            <div class="rocks rock-3"></div>
+            <div class="rocks rock-4"></div>
+            <div class="rocks rock-5"></div>
+            <div class="rocks rock-6"></div>
+          </div>
+
+        </div>
+        <!-- REVIEW TITLE & SLIDE -->
+        <div class="container-fluid my-5">
+          <h1 class="text-center fw-bold">Reviews</h1>
+        </div>
+        <div class="owl-carousel owl-theme" id="myCarousel">
+          <div class="item">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./images/reviews/Rectangle-1.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <h5 class="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./images/reviews/Rectangle-2.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- END SLIDE -->
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-body">
+          <div class="footer-top">
+            <div class="footer-menu">
+              <a class="footer-menu-link" href="#">discovery</a>
+              <a class="footer-menu-link" href="#">planets</a>
+              <a class="footer-menu-link" href="к./pages/about.html">about</a>
+            </div>
+            <div class="footer-link-social">
+              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-twitter-x"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+                </svg></a>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-instagram"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                </svg>
+              </a>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-facebook"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <hr>
+          <div class="footer-buttom">
+            <a href="#" class="footer-buttom-link">&copy; 2022 Prime Space Travel</a><a href="#"
+              class="footer-buttom-link">Privacy policy</a><a href="#" class="footer-buttom-link">Term of service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--==================================================================================================================================================-->
+    <section class="sec"><!-- .sec - star Bacground animation --></section>
+  </div>
+  <!-- Подключение скриптов jQuery, Bootstrap и Owl Carousel -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- My JavaScripts -->
+  <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/javascript.js"></script>
+  <script src="./js/sign_in.js"></script>
+</body>
+
+</html>
